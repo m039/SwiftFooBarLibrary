@@ -1,8 +1,7 @@
 public class Foo {
     public var number : Int = 111
 
-    public init() {
-    }
+    public init() {}
 
     public func getNumber() -> Int {
         return number
