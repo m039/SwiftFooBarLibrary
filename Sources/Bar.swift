@@ -1,8 +1,12 @@
-public class Bar {
+import Foundation
+
+@objc public class Bar : NSObject {
 
     var impl : IBar!
 
-    public init() {}
+    public override init() {
+        super.init()
+    }
 
     public func register(_ impl : IBar) {
         self.impl = impl

@@ -1,13 +1,17 @@
-public class Foo {
+import Foundation
+
+@objc public class Foo : NSObject {
     public var number : Int = 111
 
-    public init() {}
+    public override init() {
+        super.init();
+    }
 
     public func getNumber() -> Int {
         return number
     }
 
-    public func setNumber(_ number : Int) {
+    public func setFooNumber(_ number : Int) {
         self.number = number
     }
 }
