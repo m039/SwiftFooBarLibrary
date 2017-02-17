@@ -8,7 +8,7 @@ import Foundation
         super.init()
     }
 
-    public func register(_ impl : IBar) {
+    public func register(_ impl : IBar?) {
         self.impl = impl
     }
 
